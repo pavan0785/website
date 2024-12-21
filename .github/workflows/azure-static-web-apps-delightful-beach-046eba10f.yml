@@ -32,10 +32,6 @@ jobs:
                const coredemo = require('@actions/core')
                return await coredemo.getIDToken()
            result-encoding: string
-           "scripts":{
-  "build": "webpack --mode production", 
-  "build:azure": "npm run build && other-azure-specific-commands"
-}
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
